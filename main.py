@@ -136,7 +136,7 @@ def parse_yr(json_data):
     props = json_data.get("properties", {})
     timeseries = props.get("timeseries", [])
     now = datetime.now(tz)
-    target_dates = [(now + timedelta(days=i)).date() for i in range(4)]
+    target_dates = [(now + timedelta(days=i)).date() for i in range(6)]
     candidates = {d: [] for d in target_dates}
 
     for item in timeseries:
@@ -363,5 +363,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
