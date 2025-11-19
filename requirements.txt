@@ -1,5 +1,5 @@
-python-telegram-bot==20.6
-requests
-Pillow
+python-telegram-bot==20.3
 apscheduler
+pillow
 pytz
+requests
