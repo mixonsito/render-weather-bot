@@ -26,7 +26,7 @@ TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 if not TELEGRAM_TOKEN:
     logger.error("TELEGRAM_TOKEN not set in environment")
 USER_AGENT = "468ForecastsBot/1.0 (contact@example.com)"
-YRNO_URL = "https://api.met.no/weatherapi/locationforecast/2.0/compact"
+YRNO_URL = "https://api.met.no/weatherapi/locationforecast/2.0/complete"
 DATA_FILE = "/tmp/data.json"
 TIMEZONE = pytz.timezone("Europe/Moscow")
 
@@ -363,3 +363,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
