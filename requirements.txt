@@ -1,6 +1,7 @@
 python-telegram-bot==20.7
-apscheduler==3.12.5
+apscheduler==3.11.1
 pillow
 pytz
 requests
+
 
